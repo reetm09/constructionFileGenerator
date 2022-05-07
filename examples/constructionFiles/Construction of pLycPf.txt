@@ -1,0 +1,4 @@
+PCR oLycBBF/oLycBBR on pLYC73S			(back)
+PCR oLycPfF/oLycPfR on genomePf			(2299bp, Pf)
+Assemble back,Pf				(BsaI, pLycPf)
+Transform pLycPf			(Mach1, Amp)
