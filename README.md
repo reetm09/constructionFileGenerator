@@ -79,4 +79,4 @@ To see an example of the output and webpage, navigate to the "Example" directory
 # Some Notes
 In index.html you may see a "https://glitch.com/favicon.ico" this is because I had started writing this on Glitch, an online editor for html/javascript as I was getting more familiar with and learning the languages. Afterwords I transferred to writing it locally as I was not able to test it accruately on Glitch.
 
-Overall, I have learned a lot through this project and I had some basic familiarty with html and javascript but had to learn many new skills in order to complete this project, which I am very grateful for!
+Overall, I have learned a lot through this project and I had some basic familiarity with HTML and Javascript but had to learn many new skills in order to complete this project, which I am very grateful for!
