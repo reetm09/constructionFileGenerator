@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <script type = "text/javascript" src="script.js"></script>
+
+    <title>Promotor Swap</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <!--<script src="script.js" defer></script>-->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="jszip.js"></script>
+    <script src="jszip.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="FileSaver.js"></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Construction File Generator
+    </h1>
+    <p>
+      Here we will generate a construction file given a
+      list of oligos and type of experiment. Specifically,
+      we will be focusing on a PromotorSwap Experiment.
+    </p>
+    <p2>
+    Please choose the tsv file with your oligos. The tsv files should
+      have the following column names in this order:
+      <ul>
+        <li>"p1name": primer 1 name </li>
+        <li>"p2name": primer 2 name </li>
+        <li>"p1seq": primer 1 sequence </li>
+        <li>"p2seq": primer 2 sequence </li>
+        <li>"p1amount": primer 1 amount in nm </li>
+        <li>"p2amount": primer 2 amount in nm </li>
+        <li>"p1pur": primer 1 purification strategy </li>
+        <li>"p2pur": primer 2 purification strategy </li>
+        <li>"p1desc": primer 1 description </li>
+        <li>"p2desc": primer 2 description </li>
+        <li>"label": label name after PCR </li>
+        <li>"gname": name of genome as labelled in inventory </li>
+        <li>"gseq": genome sequence </li>
+        <li>"plasmidName": plasmid product name </li>
+      </ul>
+    </p2>
+    <br>
+    <br>
+
+    <input type="file" id="oligofile" size="20">
+
+    <!-- <input type="button" value="Import" onclick="init()"/> -->
+    <br>
+    <div id="show-text"></div>
+    <br>
+
+    <p>
+      Please enter the protoype plasmid name here. (i.e pLYC73S)
+    </p>
+    <input type="text" id="plasmid" value="Enter Construct Name.">
+    <br>
+    <button id = "submit" onclick="readTsv()">Submit</button>
+
+    <br>
+    <p id = "construction_out">
+
+    </p>
+    <!--
+    <div id="downloadButton">
+      <button id = "download" onclick="downloadAll()">Download</button>
+    </div> -->
+    <!--<a download="info.txt" id="downloadlink" style="display: none">Download</a>-->
+
+    <!--<div id="inputs" class="clearfix">
+    <input type="file" id="files" name="files[]" multiple />
+  </div>
+
+    <table id="contents" style="width:100%; height:400px;" border>
+    </table>-->
+
+
+    <!--<div id="demoShowA"></div>-->
+
+
+
+  </body>
+</html>
