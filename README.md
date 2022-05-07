@@ -11,7 +11,7 @@ Some things to keep in mind:
 1. Currently, this version of the package runs on a python hosted server.
 2. The input .tsv file has to be specified as listed below and in index.html
 3. This package has not been tested on a Windows environment, currenly only has been tested on MacOS. More testing in different aspects would be preferred as well.
-4. I also offer a "CheckOligo" feature as an extra verification step. 
+4. I also offer a "Check Primer" feature as an extra verification step. 
 
 # Webpage Design
 
